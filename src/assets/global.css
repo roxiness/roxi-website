@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
+
+:root {
+  --font-family: 'Baloo Tamma 2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --primary-color: #813fd4;
+  --secondary-color: #7ad1d1;
+  --accent-color: #c9cdfd;
+  --primary-color: #4d45b4;
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+.hero {
+  margin-top: 128px;
+}
+.hero * {
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.hero h1 {
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    line-height: 1;
+    font-size: min(196px, 30vw);
+    font-weight: 900;
+}
+.hero h2 {
+    font-size: min(64px, 10vw);
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+.hero code {
+  background: rgba(0,0,0, 0.7);
+  padding: 12px 24px;
+  font-size: clamp(12px, 2.5vw, 16px);
+  white-space: nowrap;
+}
