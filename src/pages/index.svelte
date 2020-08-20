@@ -4,6 +4,7 @@
 </script>
 
 <div class="splash" style="background-image: url('/backgrounds/{bg}')">
+  <div />
   <div class="hero">
 
     <h1>
@@ -25,6 +26,8 @@
       npx roxi create my-app
     </code>
   </div>
+  <div />
+  <div />
 </div>
 
 <!-- <BgSwatch bind:bg /> -->

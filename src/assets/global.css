@@ -21,14 +21,19 @@ html, body, #routify-app, .splash {
 }
 
 .splash {
-  height: 100vh;
+  min-height: 100vh;
   background: no-repeat center;
   background-size: cover;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
 }
 
 .hero {
   text-align: center;
-  margin-top: 128px;
+  /* transform: translate(-50%, 0);
+  position: absolute;
+  left:50%;
+  top: 20%; */
 }
 .hero * {
   color: white;
