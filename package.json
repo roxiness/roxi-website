@@ -12,9 +12,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@roxi/plugin-mdsvex": "^1.0.0",
-    "@roxi/plugin-postcss": "^1.0.0",
-    "node-sass": "^4.14.1",
     "roxi": "^1.1.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "@roxi/plugin-postcss": "^1.0.0",
+    "@roxi/plugin-mdsvex": "^1.0.0"
   }
 }
