@@ -5,6 +5,13 @@
       { "src": "_roxi/.roxi/*.js", "use": "@vercel/node" },
       { "src": "api/*.js", "use": "@vercel/node" }
     ],
+    
+    "functions": {
+      "_roxi/.roxi/ssr.js": {
+        "includeFiles": "dist/**"
+      }
+    },
+  
     "routes": [
       {
         "handle": "filesystem"
@@ -13,5 +20,5 @@
         "src": "/.*",
         "dest": "/_roxi/.roxi/ssr.js"
       }
-    ]
+    ]    
   }
