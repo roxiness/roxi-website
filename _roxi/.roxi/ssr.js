@@ -1,17 +1,11 @@
-
 const fs = require('fs')
 const { ssr } = require('@sveltech/ssr')
-let script = 'dist/build/bundle.js'
-let template = 'dist/__app.html'
 
-console.log('readdir', fs.readdirSync('./'))
-
-// template = fs.existsSync(template) ? fs.readFileSync(template, 'utf8') : template
-// script = fs.existsSync(script) ? fs.readFileSync(script, 'utf8') : script
-
-
+const script = fs.readFileSync(require.resolve('../../dist/build/bundle.js'), 'utf8')
+const template = fs.readFileSync(require.resolve('../../dist/__app.html'), 'utf8')
 
 module.exports = async (req, res) => {
     const html = await ssr(template, script, req.url)
     res.send(html + '\n<!--ssr rendered-->')
 }
+
