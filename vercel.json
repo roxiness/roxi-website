@@ -19,7 +19,7 @@
     },
     {
       "src": "/.*",
-      "dest": "/_roxi/.roxi/ssr.js"
+      "dest": "/dist/__app.html"
     }
   ]
 }
