@@ -17,6 +17,7 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "@roxi/plugin-postcss": "^1.0.0",
-    "@roxi/plugin-mdsvex": "^1.0.0"
+    "@roxi/plugin-mdsvex": "^1.0.0",
+    "@sveltech/ssr":"^0.0.12"
   }
 }
