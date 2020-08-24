@@ -1,24 +1,25 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "dist/**", "use": "@vercel/static", "config": {"distDir": "dist"} },
-      { "src": "_roxi/.roxi/*.js", "use": "@vercel/node" },
-      { "src": "api/*.js", "use": "@vercel/node" }
-    ],
-    
-    "functions": {
-      "_roxi/.roxi/ssr.js": {
-        "includeFiles": "dist/**"
-      }
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/**",
+      "use": "@vercel/static",
+      "config": { "distDir": "dist" }
     },
-  
-    "routes": [
-      {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/.*",
-        "dest": "/_roxi/.roxi/ssr.js"
-      }
-    ]    
-  }
+    {
+      "src": "_roxi/.roxi/*.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": "dist/**" }
+    }
+  ],
+
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/_roxi/.roxi/ssr.js"
+    }
+  ]
+}
