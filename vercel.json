@@ -1,12 +1,17 @@
 {
     "version": 2,
+    "builds": [
+      { "src": "dist/**", "use": "@vercel/static", "config": {"distDir": "dist"} },
+      { "src": "_roxi/.roxi/*.js", "use": "@vercel/node" },
+      { "src": "api/*.js", "use": "@vercel/node" }
+    ],
     "routes": [
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/.*",
-            "dest": "/__app.html"
-        }
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/.*",
+        "dest": "/_roxi/.roxi/ssr.js"
+      }
     ]
-}
+  }
