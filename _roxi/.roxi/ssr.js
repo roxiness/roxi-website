@@ -4,7 +4,7 @@ const { ssr } = require('@sveltech/ssr')
 let script = '../../dist/build/bundle.js'
 let template = '../../dist/__app.html'
 
-console.log('readdir', fs.readdirSync('dist/build'))
+console.log('readdir', fs.readdirSync('../../'))
 
 // template = fs.existsSync(template) ? fs.readFileSync(template, 'utf8') : template
 // script = fs.existsSync(script) ? fs.readFileSync(script, 'utf8') : script
